@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Dashboard Desa Cantik</title>
+    <!-- Meta SEO & Social Sharing -->
+
+    <meta name="twitter:image" content="image/logobps.png" />
+    <link rel="icon" type="image/png" href="image/logobps.png" />
+
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- tailwind css -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icon fontawesome-->
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- style font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+      * {
+        font-family: "Ubuntu", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 transition-colors duration-300">
+    <!-- header konten  -->
+    <header
+      class="flex fixed z-30 w-full bg-blue-800 backdrop-blur-md items-center justify-between"
+    >
+      <!-- <div class="flex h-16 w-full items-center justify-between"> -->
+      <div class="flex gap-[8px] items-center pl-8 lg:pl-20">
+        <!-- logo -->
+        <div
+          class="w-14 h-14 rounded-full flex items-center justify-center overflow-hidden"
+        >
+          <img
+            src="image/logobps.png"
+            class="logo-img w-12 h-12 object-contain"
+            alt="Logo"
+          />
+        </div>
+
+        <!-- nama intansi -->
+        <span class="text-lg font-bold text-white">
+          Badan Pusat Statistik Prov. Gorontalo
+        </span>
+      </div>
+    </header>
+    <!-- end header konten  -->
+    <!-- main konten -->
+    <main class="pt-16">
+      <section id="home" class="bg-white py-16">
+        <div class="container mx-auto px-4">
+          <h1 class="text-3xl font-bold text-center mb-8">
+            Selamat Datang di Dashboard Desa Cantik
+          </h1>
+          <p class="text-center text-gray-600">
+            Ini adalah dashboard untuk mengelola data desa dengan mudah dan
+            efisien.
+          </p>
+        </div>
+      </section>
+
+      <!-- konten lainnya di sini -->
+      <section id="dashboard-cards" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-2xl font-bold text-center mb-8">
+            Dashboard Kabupaten/Kota
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card Template Start -->
+            <!-- Ulangi blok ini untuk setiap kabupaten/kota -->
+            <div
+              class="bg-white rounded-lg shadow p-6 flex flex-col hover:shadow-lg transition hover:scale-105"
+            >
+              <div class="mb-4">
+                <h3 class="text-xl font-bold text-blue-800">7501 Boalemo</h3>
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Jadwal:</p>
+                <ul class="ml-4 list-disc text-sm">
+                  <li>
+                    Perencanaan:
+                    <span class="text-gray-600">[Isi jadwal perencanaan]</span>
+                  </li>
+                  <li>
+                    Pembinaan:
+                    <span class="text-gray-600">[Isi jadwal pembinaan]</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Output:</p>
+                <a href="#" class="text-blue-600 underline text-sm"
+                  >Lihat Output</a
+                >
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Dokumentasi:</p>
+                <a href="#" class="text-blue-600 underline text-sm"
+                  >Download Dokumentasi</a
+                >
+              </div>
+              <div class="mt-auto pt-2">
+                <p class="font-semibold mb-1">Media Sosial:</p>
+                <div class="flex space-x-3">
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    ><i class="fab fa-facebook fa-lg"></i
+                  ></a>
+                  <a href="#" class="text-pink-500 hover:text-pink-700"
+                    ><i class="fab fa-instagram fa-lg"></i
+                  ></a>
+                  <a href="#" class="text-blue-400 hover:text-blue-600"
+                    ><i class="fab fa-twitter fa-lg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- Card Template End -->
+
+            <!-- Copy-paste blok di atas, ganti nama & data untuk 7502, 7503, dst -->
+            <div
+              class="bg-white rounded-lg shadow p-6 flex flex-col hover:shadow-lg transition hover:scale-105"
+            >
+              <div class="mb-4">
+                <h3 class="text-xl font-bold text-blue-800">
+                  7502 Kab. Gorontalo
+                </h3>
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Jadwal:</p>
+                <ul class="ml-4 list-disc text-sm">
+                  <li>Perencanaan: [Isi jadwal]</li>
+                  <li>Pembinaan: [Isi jadwal]</li>
+                </ul>
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Output:</p>
+                <a href="#" class="text-blue-600 underline text-sm"
+                  >Lihat Output</a
+                >
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Dokumentasi:</p>
+                <a href="#" class="text-blue-600 underline text-sm"
+                  >Download Dokumentasi</a
+                >
+              </div>
+              <div class="mt-auto pt-2">
+                <p class="font-semibold mb-1">Media Sosial:</p>
+                <div class="flex space-x-3">
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    ><i class="fab fa-facebook fa-lg"></i
+                  ></a>
+                  <a href="#" class="text-pink-500 hover:text-pink-700"
+                    ><i class="fab fa-instagram fa-lg"></i
+                  ></a>
+                  <a href="#" class="text-blue-400 hover:text-blue-600"
+                    ><i class="fab fa-twitter fa-lg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- ... ulangi untuk 7503, 7504, 7505, 7571 ... -->
+            <div
+              class="bg-white rounded-lg shadow p-6 flex flex-col hover:shadow-lg transition hover:scale-105"
+            >
+              <div class="mb-4">
+                <h3 class="text-xl font-bold text-blue-800">7503 Pohuwato</h3>
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Jadwal:</p>
+                <ul class="ml-4 list-disc text-sm">
+                  <li>Perencanaan: [Isi jadwal]</li>
+                  <li>Pembinaan: [Isi jadwal]</li>
+                </ul>
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Output:</p>
+                <a href="#" class="text-blue-600 underline text-sm"
+                  >Lihat Output</a
+                >
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Dokumentasi:</p>
+                <a href="#" class="text-blue-600 underline text-sm"
+                  >Download Dokumentasi</a
+                >
+              </div>
+              <div class="mt-auto pt-2">
+                <p class="font-semibold mb-1">Media Sosial:</p>
+                <div class="flex space-x-3">
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    ><i class="fab fa-facebook fa-lg"></i
+                  ></a>
+                  <a href="#" class="text-pink-500 hover:text-pink-700"
+                    ><i class="fab fa-instagram fa-lg"></i
+                  ></a>
+                  <a href="#" class="text-blue-400 hover:text-blue-600"
+                    ><i class="fab fa-twitter fa-lg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow p-6 flex flex-col hover:shadow-lg transition hover:scale-105"
+            >
+              <div class="mb-4">
+                <h3 class="text-xl font-bold text-blue-800">
+                  7504 Bone Bolango
+                </h3>
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Jadwal:</p>
+                <ul class="ml-4 list-disc text-sm">
+                  <li>Perencanaan: [Isi jadwal]</li>
+                  <li>Pembinaan: [Isi jadwal]</li>
+                </ul>
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Output:</p>
+                <a href="#" class="text-blue-600 underline text-sm"
+                  >Lihat Output</a
+                >
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Dokumentasi:</p>
+                <a href="#" class="text-blue-600 underline text-sm"
+                  >Download Dokumentasi</a
+                >
+              </div>
+              <div class="mt-auto pt-2">
+                <p class="font-semibold mb-1">Media Sosial:</p>
+                <div class="flex space-x-3">
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    ><i class="fab fa-facebook fa-lg"></i
+                  ></a>
+                  <a href="#" class="text-pink-500 hover:text-pink-700"
+                    ><i class="fab fa-instagram fa-lg"></i
+                  ></a>
+                  <a href="#" class="text-blue-400 hover:text-blue-600"
+                    ><i class="fab fa-twitter fa-lg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- Card Gorut -->
+            <div
+              class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:shadow-2xl hover:ring-2 hover:ring-blue-200 transition hover:scale-105 min-h-[420px]"
+            >
+              <!-- Judul Card -->
+              <div class="mb-4 flex items-center gap-2">
+                <span
+                  class="inline-block bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-full text-xs"
+                  >7505</span
+                >
+                <h3 class="text-xl font-bold text-blue-800">Gorontalo Utara</h3>
+              </div>
+              <!-- Jadwal -->
+              <div class="mb-3">
+                <p class="font-semibold mb-1 text-center">Jadwal:</p>
+                <ul class="ml-4 list-disc text-sm text-gray-700">
+                  <li>
+                    Perencanaan:
+                    <span class="text-gray-500">
+                      <ol>
+                        <li>1. Rapat Awal: 10 Januari 2023</li>
+                        <li>2. Penyusunan Rencana: 15 Januari 2023</li>
+                        <li>3. Evaluasi: 20 Januari 2023</li>
+                      </ol>
+                    </span>
+                  </li>
+                  <li>
+                    Pembinaan:
+                    <span class="text-gray-500">
+                      <ol>
+                        <li>1. Pelatihan Tim: 25 Januari 2023</li>
+                        <li>2. Monitoring: 30 Januari 2023</li>
+                        <li>3. Penilaian Akhir: 5 Februari 2023</li>
+                      </ol>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Output Button -->
+              <div class="mb-3">
+                <p class="font-semibold mb-1 text-center">Output:</p>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition text-sm font-semibold"
+                  aria-label="Lihat Output"
+                >
+                  <i class="fas fa-external-link-alt mr-2"></i>
+                  Lihat Output
+                </a>
+              </div>
+              <!-- Dokumentasi Scroll Horizontal -->
+              <div class="mb-3">
+                <p class="font-semibold mb-1">Dokumentasi:</p>
+                <div class="overflow-x-auto">
+                  <div class="flex space-x-3 py-2 min-w-[250px]">
+                    <a
+                      href="#"
+                      class="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg flex flex-col items-center justify-center shadow hover:bg-blue-50 hover:shadow-lg transition group"
+                    >
+                      <i
+                        class="fas fa-file-alt text-blue-600 text-2xl mb-1"
+                      ></i>
+                      <span class="text-xs text-gray-700 text-center"
+                        >Dok 1</span
+                      >
+                    </a>
+                    <a
+                      href="#"
+                      class="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg flex flex-col items-center justify-center shadow hover:bg-blue-50 hover:shadow-lg transition group"
+                    >
+                      <i class="fas fa-image text-green-600 text-2xl mb-1"></i>
+                      <span class="text-xs text-gray-700 text-center"
+                        >Foto 2</span
+                      >
+                    </a>
+                    <a
+                      href="#"
+                      class="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg flex flex-col items-center justify-center shadow hover:bg-blue-50 hover:shadow-lg transition group"
+                    >
+                      <i class="fas fa-file-pdf text-red-600 text-2xl mb-1"></i>
+                      <span class="text-xs text-gray-700 text-center"
+                        >PDF 3</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Media Sosial -->
+              <div class="mt-auto pt-2">
+                <p class="font-semibold mb-1">Media Sosial:</p>
+                <div class="flex space-x-3">
+                  <a
+                    href="#"
+                    class="text-blue-500 hover:text-blue-700"
+                    aria-label="Facebook"
+                    ><i class="fab fa-facebook fa-lg"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-pink-500 hover:text-pink-700"
+                    aria-label="Instagram"
+                    ><i class="fab fa-instagram fa-lg"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-blue-400 hover:text-blue-600"
+                    aria-label="Twitter"
+                    ><i class="fab fa-twitter fa-lg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- Card Kota gor -->
+            <div
+              class="bg-white rounded-lg shadow p-6 flex flex-col hover:shadow-lg transition hover:scale-105"
+            >
+              <div class="mb-4">
+                <h3 class="text-xl font-bold text-blue-800">
+                  7571 Kota Gorontalo
+                </h3>
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Jadwal:</p>
+                <ul class="ml-4 list-disc text-sm">
+                  <li>Perencanaan: [Isi jadwal]</li>
+                  <li>Pembinaan: [Isi jadwal]</li>
+                </ul>
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Output:</p>
+                <a href="#" class="text-blue-600 underline text-sm"
+                  >Lihat Output</a
+                >
+              </div>
+              <div class="mb-2">
+                <p class="font-semibold">Dokumentasi:</p>
+                <a href="#" class="text-blue-600 underline text-sm"
+                  >Download Dokumentasi</a
+                >
+              </div>
+              <div class="mt-auto pt-2">
+                <p class="font-semibold mb-1">Media Sosial:</p>
+                <div class="flex space-x-3">
+                  <a href="#" class="text-blue-500 hover:text-blue-700"
+                    ><i class="fab fa-facebook fa-lg"></i
+                  ></a>
+                  <a href="#" class="text-pink-500 hover:text-pink-700"
+                    ><i class="fab fa-instagram fa-lg"></i
+                  ></a>
+                  <a href="#" class="text-blue-400 hover:text-blue-600"
+                    ><i class="fab fa-twitter fa-lg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer konten -->
+    <footer class="mt-10 bg-gray-900 py-10 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <div class="mb-4">
+          <img
+            src="image/logobps.png"
+            alt="Logo BPS"
+            class="mx-auto mb-2 h-14 w-14 rounded-full"
+          />
+          <h4 class="text-xl font-bold">
+            Badan Pusat Statistik Provinsi Gorontalo
+          </h4>
+        </div>
+        <p class="mb-2 text-gray-400">
+          &copy; 2025 Desa Cantik. All rights reserved.
+        </p>
+        <div class="mt-2 flex justify-center space-x-4">
+          <a
+            href="https://facebook.com/yourpage"
+            class="text-gray-400 hover:text-blue-400"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-facebook text-2xl"></i>
+          </a>
+          <a
+            href="https://twitter.com/yourpage"
+            class="text-gray-400 hover:text-blue-400"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-twitter text-2xl"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/bps_gorontalo?igsh=MWdqOXVwcGJ2eTI3Nw=="
+            class="text-gray-400 hover:text-pink-400"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+          <a
+            href="https://youtube.com/@bpsprovgorontalo?si=fgXtYBb-f-v6-bBP"
+            class="text-gray-400 hover:text-red-400"
+            aria-label="YouTube"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-youtube text-2xl"></i>
+          </a>
+        </div>
+      </div>
+      <div
+        class="container mx-auto mt-6 flex justify-center px-4 text-sm text-gray-500"
+      >
+        <p>
+          Website ini dibuat sebagai bagian dari program Desa Cantik oleh
+
+          <a
+            href="https://gorontalo.bps.go.id/id"
+            class="ml-2 text-blue-400 hover:underline"
+            target="_blank"
+            rel="noopener"
+            >BPS Prov. Gorontalo</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
